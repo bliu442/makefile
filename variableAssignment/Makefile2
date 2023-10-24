@@ -1,0 +1,10 @@
+foo = x
+foo ?= y
+
+bar ?= y
+
+# ?= 条件赋值 
+
+.PHONY:all
+all:
+	@echo "foo = $(foo), bar = $(bar)"

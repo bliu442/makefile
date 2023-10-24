@@ -1,0 +1,14 @@
+x = foo
+y = $(x) b
+x = later
+
+xx := foo
+yy := $(xx) b
+xx := later
+
+# := 简单拓展变量
+
+.PHONY:all
+all:
+	@echo "x = $(x), xx = $(xx)"
+	@echo "y = $(y), yy = $(yy)"

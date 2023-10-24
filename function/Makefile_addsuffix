@@ -1,0 +1,9 @@
+.PHONY:all
+
+name = file1 file2 file3
+
+src_name := $(addsuffix .c, $(name))
+
+all:
+	@echo "name = $(name)"
+	@echo "src_name = $(src_name)"

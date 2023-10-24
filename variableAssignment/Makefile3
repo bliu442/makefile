@@ -1,0 +1,8 @@
+x = test1
+x += test2
+
+# += 追加赋值
+
+.PHONY:all
+all:
+	@echo "x = $(x)"

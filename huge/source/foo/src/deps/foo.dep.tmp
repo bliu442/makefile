@@ -1,0 +1,2 @@
+foo.o: foo.c \
+ D:/ST/cygwin64/home/ccore/bliu/makefiles/huge/source/foo/inc/foo.h

@@ -1,0 +1,10 @@
+.PHONY:all
+
+without_dir = foo.c bar.c main.c
+with_dir := $(addprefix objs/,$(without_dir))
+
+# addprefix 将字符串中的每一个子串添加一个前缀
+
+all:
+	@echo "without_dir = $(without_dir)"
+	@echo "with_dir = $(with_dir)"

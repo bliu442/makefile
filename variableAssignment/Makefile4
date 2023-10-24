@@ -1,0 +1,8 @@
+.PHONY:all
+
+foo = a.o b.o c.o
+bar := $(foo:.o=.c)
+#将foo变量所有.o替换为.c 赋值同时完成后缀替换操作
+
+all:
+	@echo "bar = $(bar)"
